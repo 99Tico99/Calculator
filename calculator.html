@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <main class="calculator">
+      <!-- Telas -->
+      <div class="screens">
+        <h1>Calculadora</h1>
+        <div id="topScreen">0</div>
+        <div id="bottomScreen">0</div>
+      </div>
+
+      <!-- Botões-->
+      <div class="button-box">
+        <div class="buttons">
+          <button class="clean" onclick="clean()">C</button>
+          <button onclick="del()">&lArr;</button>
+          <button onclick="input('/')">&divide;</button>
+          <button onclick="input('*')">&times;</button>
+          <button onclick="input('7')">7</button>
+          <button onclick="input('8')">8</button>
+          <button onclick="input('9')">9</button>
+          <button onclick="input('-')">&minus;</button>
+          <button onclick="input('4')">4</button>
+          <button onclick="input('5')">5</button>
+          <button onclick="input('6')">6</button>
+          <button onclick="input('+')">&#43;</button>
+          <button onclick="input('1')">1</button>
+          <button onclick="input('2')">2</button>
+          <button onclick="input('3')">3</button>
+          <button onclick="result()" class="result">&#61;</button>
+          <button onclick="input('0')" class="zero">0</button>
+          <button onclick="input('.')">.</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

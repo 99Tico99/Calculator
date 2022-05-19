@@ -1,0 +1,124 @@
+@font-face {
+    font-family: Digital;
+    src: url(font/DS-DIGI.tff);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #28313b;
+}
+
+.calculator {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 15px 15px 30px 30px;
+    box-shadow: 1px 2px 10px 1px black;
+    background: linear-gradient(120deg, rgb(63, 104, 146), rgba(16, 59, 64, 0.5));
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.screens {
+    padding: 0px 5px 5px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+#topScreen {
+    padding: 2px 1px 0px 0px;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: right;
+    background-color: #7fbd89;
+    font-family: Digital;
+    border-bottom: 1px solid black;
+    margin-bottom: 4px;
+    max-width: 210px;
+    min-width: 210px;
+    box-shadow: inset 1px 2px 2px 1px black;
+}
+
+#bottomScreen {
+    background-color: #7fbd89;
+    font-family: Digital;
+    font-size: 45px;
+    text-align: right;
+    max-width: 210px;
+    min-width: 210px;
+    padding: 1px 2px 0px 0px;
+    border-radius: 5px;
+    box-shadow: inset 1px 1.5px 2px 1px black;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px;
+}
+
+.buttons {
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(4, 52px);
+    grid-template-rows: repeat(5, 50px);
+}
+
+button {
+    font-size: 22px;
+    margin: 3px;
+    border-radius: 10px;
+    background-color: #2c4159;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0);
+}
+
+button:hover {
+    background-color: rgb(10, 27, 65);
+}
+
+button:active {
+    background-color: rgb(32, 60, 121);
+}
+
+.clean {
+    background-color: rgb(161, 30, 30);
+}
+
+.clean:hover {
+    background-color: rgb(103, 8, 8);
+}
+
+.clean:active {
+    background-color: rgb(157, 41, 41);
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.result {
+    grid-row: span 2;
+    background-color: rgb(20, 123, 46);
+}
+
+.result:hover {
+    background-color: rgb(11, 73, 26);
+}
+
+.result:active {
+    background-color: rgb(34, 104, 51);
+}
