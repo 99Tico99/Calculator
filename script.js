@@ -67,9 +67,9 @@ function result() {
     if (bottomScreen.length > 0) {
         bottomScreen = String(eval(topScreen + bottomScreen));
         topScreen = "";
-        if (bottomScreen == 0) {
+        if (bottomScreen === "0") {
             clean();
-        } if (bottomScreen.length >= 8) { // Implementa precisão para não ultrapassar a tela.
+        } else if (bottomScreen.length >= 8) { // Implementa precisão para não ultrapassar a tela.
             document.getElementById("topScreen").innerHTML = "0";
             document.getElementById("bottomScreen").innerHTML = bottomScreen = Number(bottomScreen).toPrecision(4);
         } else { // Apenas imprime o resultado sem ultrapassar a tela.
