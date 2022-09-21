@@ -1,6 +1,3 @@
-// Jônatan Barreiro Mendes. (05/2022)
-// Sugestão ou algum bug? Envie-me um email! jonathanbarreiro88@gmail.com
-
 let topScreen = bottomScreen = "";
 const operators = ["+", "-", "*", "/"];
 
@@ -11,7 +8,7 @@ const checkOperator = input => {
             return true;
 };
 
-// Verifica se há mais de 2 operadores numa string. (Usado em "del()", geralmente na tela de cima e pula o primeiro valor)
+// Verifica se há mais de 2 operadores numa string (Usado em "del()", geralmente na tela de cima e pula o primeiro valor).
 function countOperators(string) {
     for (let i = theAmount = 0; i < operators.length; i++) {
         for (let j = 1; j < string.length; j++) {
@@ -24,13 +21,9 @@ function countOperators(string) {
 };
 
 // Verifica se há um ponto na string.
-const checkPoint = string => {
-    for (let str of string)
-        if (str === ".")
-            return true;
-};
+const checkPoint = string => string.includes(".");
 
-// Corta a conta até encontrar num operador/sinal.
+// Corta a conta até encontrar um operador/sinal.
 function sliceCanvas(string) {
     // Começa pela direta e pula o primeiro caractere (é um sinal/operador da conta de cima).
     for (let i = string.length - 2; i > 0; i--) {
